@@ -8,9 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>DOM操作css样式</title>
+    <style type="text/css">
+
+      #box1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+
+    </style>
+
+    <script type="text/javascript" >
+      window.onload = function (ev) {
+        document.getElementById("box1").style.backgroundColor = 'yellow';
+      };
+    </script>
   </head>
   <body>
-  $END$
+    <div id="box1"></div>
   </body>
 </html>
