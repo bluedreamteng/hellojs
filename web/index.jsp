@@ -15,11 +15,21 @@
 
     <script type="text/javascript" >
       window.onload = function (ev) {
-        document.getElementById("box1").style.backgroundColor = 'yellow';
+          var divobj = document.getElementById("box1");
+          document.getElementById("btn").onclick = function (ev1) {
+          divobj.style.backgroundColor = 'yellow';
+        };
+
+        document.getElementById("btn2").onclick = function (ev1) {
+
+        };
       };
     </script>
   </head>
   <body>
     <div id="box1"></div>
+    <br/>
+    <button type="button" id="btn">点我一下</button>
+    <button type="button" id="btn2">读取样式</button>
   </body>
 </html>
